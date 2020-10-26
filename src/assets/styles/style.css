@@ -1,0 +1,404 @@
+/*-------------------------------
+
+	共通
+
+-------------------------------*/
+html,
+body {
+    font-family: YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.bodyBox {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../images/common/backgroundimage.jpg");
+}
+
+/*---------- ヘッダー ----------*/
+header {
+    width: 100%;
+    background-image: url(http://kourijima.info/wp-content/uploads/2013/09/headerBackground.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    width: 65%;
+    margin: auto;
+}
+
+.headerNavi ul {
+    display: flex;
+}
+
+.headerNavi li:not(:last-child) {
+    margin-right: 18px;
+}
+
+.headerNavi a {
+    color: white;
+    font-size: 14px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.headerNavi a:hover {
+    opacity: 0.4;
+}
+
+.headerLogo img {
+    display: block;
+    width: 160px;
+}
+
+.headerLogo img {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.headerLogo a:hover img {
+    opacity: 0.4;
+}
+
+/*---------- メイン ----------*/
+.mainContents {
+    width: 65%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 1.5px 1.5px 2px #999;
+    border-radius: 5px;
+    padding: 30px 0 20px;
+}
+
+.mainSideBlankBox {
+    margin: 0 50px;
+}
+
+.mainContents h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.mainContents h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.mainContents .mainImage img {
+    width: 100%;
+}
+
+.mainContents .mainTextBox {
+    margin: 20px 0 40px;
+}
+
+.mainContents .mainText {
+    margin: 0 0 24px;
+    font-size: 15px;
+}
+
+.mainContents .mainText:last-child {
+    margin: 0;
+}
+
+/*---------- メイン(マップ) ----------*/
+.mainMap_contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.mainMap_map {
+    width: 47%;
+}
+
+.mainMap_map img {
+    width: 100%;
+}
+
+.mainMap_name {
+    width: 48%;
+}
+
+/*---------- メイン(リンク) ----------*/
+.addLink {
+    color: blue;
+}
+
+.addLink:hover {
+    border-bottom: 1px solid blue;
+}
+
+/*---------- メイン(説明) ----------*/
+.mainDescription {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.mainDescription dt {
+    font-weight: 600;
+}
+
+.mainDescription dd:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.mainDotsList {
+    list-style: square;
+    padding: 0 0 0 21px;
+    margin: 0 0 24px;
+}
+
+/*---------- メイン(記事) ----------*/
+.articleBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---------- メイン(サムネ付き記事) ----------*/
+.mainArticleBox {
+    width: 77%;
+}
+
+.mainArticle {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: dashed 1px #666666;
+}
+
+.mainArticle_thumbnail {
+    width: 14vw;
+    height: 14vw;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    background-color: #000;
+    margin-right: 10px;
+}
+
+.mainArticle_thumbnail:hover {
+    filter: brightness(60%);
+}
+
+.mainArticle_thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainArticle_contents {
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+}
+
+.mainArticle_contents_title {
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+
+.mainArticle_contents_day {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.mainArticle_contents_text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #aaa;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.mainArticle_contents_readArticle {
+    font-size: 15px;
+    text-align: end;
+}
+
+.oldArticle {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+/*---------- メイン(最新記事) ----------*/
+.newArticleBox {
+    width: 20%;
+    padding-left: 10px;
+    border-left: solid 1px #ddd;
+}
+
+.newArticle {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.allArticle {
+    font-size: 14px;
+    text-align: end;
+    margin-top: 15px;
+}
+
+/*---------- 予約エリア ----------*/
+.reservation {
+    border-top: dashed 1px #666666;
+}
+
+.reservationBox {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+/*---------- フッター ----------*/
+footer {
+    border-top: dashed 1px #666666;
+    padding-bottom: 5px;
+}
+
+.footerContents {
+    display: flex;
+    justify-content: center;
+}
+
+.footerContents div:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footerContents a {
+    font-size: 14px;
+}
+
+.addLinkBlack {
+    color: #666666;
+}
+
+.addLinkBlack:hover {
+    opacity: 0.5;
+    border-bottom: solid 1px;
+}
+
+/*-------------------------------
+
+	TOPページ
+
+-------------------------------*/
+
+/*---------- ナビゲーション ----------*/
+.topNavi {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 0;
+    width: 100vw;
+}
+
+.topNavi img {
+    display: block;
+    width: 160px;
+}
+
+.topNavi ul {
+    display: flex;
+    margin-left: 70px;
+}
+
+.topNavi li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.topNavi ul a {
+    color: white;
+    font-size: 15px;
+}
+
+/*---------- SNSボタン ----------*/
+.topSns {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 6px 0 1px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.topSns_contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 14%;
+    margin: auto;
+}
+
+/*---------- 全体のBOX定義 ----------*/
+.topImageBox {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*---------- 背景の指定 ----------*/
+.topImageBox .topImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    animation: bgAnime 21s infinite; /* 3画像 × 各5s = 15s */
+}
+
+/*---------- 段差で背景画像のアニメーションを実行 ----------*/
+.topImageBox .src1 {
+    background-image: url("../images/top/topimage1.jpg"); /* 背景の画像を指定 */
+}
+.topImageBox .src2 {
+    background-image: url("../images/top/topimage2.jpg"); /* 背景の画像を指定 */
+    animation-delay: 7s;
+}
+.topImageBox .src3 {
+    background-image: url("../images/top/topimage3.jpg"); /* 背景の画像を指定 */
+    animation-delay: 14s;
+}
+
+@keyframes bgAnime {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
